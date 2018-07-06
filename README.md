@@ -13,12 +13,16 @@
 - To clear the LCD display, call `LCD_Clear();`
 - Sample code flow: 
 	
-
+		#include "stm32f0xx.h"
+		#include "LCDhd44780.h"
+		
 	    void main(){
-	    LCD_Initialization();	//initialises LCD
-	    LCD_PrintString( "test",1,0);	//print string "test" at 1,0
-	    LCD_PrintCustom(_customChar1 ,1,0); //prints custom character
-	    LCD_Clear(); 			//clears LCD screen
+	    
+	    	LCD_Initialization();	            //initialises LCD
+	    	LCD_PrintString( "test",1,0);	    //print string "test" at 1,0
+	    	LCD_PrintCustom(_customChar1 ,1,0); //prints custom character
+	    	LCD_Clear(); 						//clears LCD screen
+	    	
 	    }
 	    while(1);
 
@@ -44,15 +48,15 @@ This library can be used with any MCU .
 		#define _RW_LCD					    //to eg.  GPIOB,GPIO_Pin_1
 		#define _RW_LCD
 		#define _EN_LCD
-		#define	_D7_LCD
+		#define _D7_LCD
 		#define _D6_LCD
 		#define _D5_LCD
-		#define	_D5_LCD
-		#define	_D4_LCD 
-		#define	_D3_LCD
-		#define	_D2_LCD 
-		#define	_D1_LCD
-		#define	_D0_LCD
+		#define _D5_LCD
+		#define _D4_LCD 
+		#define _D3_LCD
+		#define _D2_LCD 
+		#define _D1_LCD
+		#define _D0_LCD
 		#define CONFIG_OUTPUT_LCD    		//to eg.  GPIOO_Mode_OUT,GPIO_OType_PP,GPIO_PuPd_UP,GPIO_Speed_Level_3 
 		#define CONFIG_INPUT_LCD  			//to eg. GPIO_Mode_IN,GPIO_OType_PP,GPIO_PuPd_UP,GPIO_Speed_Level_3
 
