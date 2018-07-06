@@ -17,8 +17,7 @@ _____________________________________________________________________________
 #define __ISLCD__
 
 #include "stdint.h"
-#define __FRAMES__
-//#undef  __FRAMES__  
+//#define __FRAMES__
 
 
 #ifdef __FRAMES__
