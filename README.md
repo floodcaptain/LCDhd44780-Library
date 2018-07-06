@@ -23,8 +23,9 @@
 	    	LCD_PrintCustom(_customChar1 ,1,0); //prints custom character
 	    	LCD_Clear(); 						//clears LCD screen
 	    	
+	    	while(1);
 	    }
-	    while(1);
+	    
 
 # How to configure?
 
